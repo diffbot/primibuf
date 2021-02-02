@@ -1,1 +1,4 @@
 /.gradle/
+
+/generator/build/
+/runtime/build/
