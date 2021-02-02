@@ -12,6 +12,8 @@ This library uses primitive arrays as much as possible to reduce the overhead.
 
 It has been used in production in Diffbot entity linking system and brings the GC down significantly.
 
+![Gabage Collection activity on a production server](/docs/gc.png)
+
 ## Usage
 
 Overall, we tried to keep the public API as close to Google's Protobuf-Java as possible,
