@@ -1,0 +1,24 @@
+subprojects {
+    apply plugin: "java"
+
+    group 'com.diffbot.primibuf'
+    version '0.3'
+
+    repositories {
+        mavenCentral()
+    }
+
+    apply plugin: "maven-publish"
+    publishing {
+        repositories {
+            maven {
+                name = "GitHubPackages"
+                url = uri("https://maven.pkg.github.com/diffbot/primibuf")
+                credentials {
+                    username = "$githubUser"
+                    password = "$githubToken"
+                }
+            }
+        }
+    }
+}

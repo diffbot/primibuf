@@ -1,0 +1,12 @@
+dependencies {
+    compile group: 'com.google.protobuf', name: 'protobuf-java', version: '3.5.1'
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            artifactId 'primibuf-runtime'
+            from components.java
+        }
+    }
+}
